@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000021;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #12123E;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a,
+.left a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstsec>div {
+    width: 30%;
+}
+
+.leftsec {
+    font-size: 2.9rem;
+}
+
+.leftsec .butn {
+    background-color: #121251;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.leftsec .buttons {
+    padding: 20px 0 0 10px;
+}
+
+
+.rightsec img {
+    width: 115%;
+}
+
+.namecolor {
+    color: rgb(171, 93, 244);
+}
+
+#element {
+    color: rgb(171, 93, 244);
+}
+
+.t {
+    margin: 60px 0 0 0;
+}
+
+
+.table td,th {
+    padding: 15px 10px;
+}
+
+:root {
+    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+.card {
+    margin-top: 25%;
+    background: #222;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source: var(--gradient) !important;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    border: 5px solid #fff !important;
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+        background-color: #12123E;
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    nav ul li {
+        margin: 0 22px;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    .left {
+        margin: 1.5vh 0 0 0;
+        font-size: 2rem;
+    }
+
+    .firstsec {
+        margin: 4vh 0;
+        flex-direction: column-reverse;
+    }
+
+    .firstsec>div {
+        width: 90%;
+    }
+
+    .leftsec {
+        padding-top: 1vh;
+        font-size: 5vh;
+        margin: 0 0 0 5%;
+    }
+
+    .leftsec .buttons {
+        display: none;
+    }
+
+    .rightsec img {
+        width: 90vw;
+
+    }
+
+    .cnt {
+        margin: 20% 0 0 20%;
+    }
+
+    .card {
+        margin: 10% auto;
+    }
+
+    .table td {
+        padding: 15px 0 0 0;
+        font-size: 15px;
+        text-align: center;
+        background-color: #000021;
+    }
+
+    .table th {
+        padding: 25px 0 auto 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
